@@ -1,22 +1,85 @@
 aid: arkcom
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arkcom.png
 name: Ark.com
-description: Ark.com is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Ark.com was a people search engine founded in San Francisco in March
+  2012 by Patrick Riley and Yiming Liu, and part of Y Combinator''s Winter 2012 batch.
+  Ark indexed over a billion public social network profiles — aggregating "ghost profiles"
+  from Facebook, LinkedIn, AngelList and other networks — and let users search across
+  them with filters such as hometown, current city, high school, college, employer
+  and interests, to reconnect with classmates and acquaintances or find new business
+  contacts. The company raised a $4.2M seed round in April 2012 from Andreessen Horowitz,
+  Greylock Partners and SV Angel, and reached the finals of TechCrunch Disrupt NYC
+  2012. Ark is no longer operating: Y Combinator lists the company as Inactive and
+  PitchBook lists it as Out of Business. As of a July 2026 probe the ark.com domain
+  no longer serves the company — it redirects to www.ark-invest.com, the unrelated
+  ARK Investment Management site — and no api., developer. or docs. subdomain resolves.
+  Ark never published a public API, developer portal or SDKs, so there is no API surface
+  to catalog. Retained as a historical a16z portfolio record only.'
 url: https://raw.githubusercontent.com/api-evangelist/arkcom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
+- Greylock Partners
+- SV Angel
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-status-evidence:
+- 'Y Combinator company profile lists Ark (W12) as Inactive: https://www.ycombinator.com/companies/ark'
+- 'PitchBook company profile lists Ark.com as Out of Business: https://pitchbook.com/profiles/company/54329-32'
+- 'Probe 2026-07-19: http://ark.com redirects to https://www.ark-invest.com/ (unrelated
+  company, ARK Investment Management); https://ark.com times out; api./developer./docs./www.ark.com
+  do not resolve; /.well-known/security.txt, /llms.txt and /.well-known/api-catalog
+  all 404 on the redirect target.'
+x-founded: '2012-03'
+x-founders:
+- Patrick Riley
+- Yiming Liu
+x-accelerator: Y Combinator W12
+x-disambiguation: 'Not to be confused with: ARK Investment Management (ark-funds.com
+  / ark-invest.com), which now controls the ark.com redirect; the ARK Ecosystem blockchain
+  (ark.io / ark.dev); or AI Ark (ai-ark.com), a separate B2B data enrichment API vendor.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Defunct
+- People Search
+- Social Search
+- Search Engine
+- Data Aggregation
+- Y Combinator
+- Venture Backed
 apis: []
+common:
+- type: Wikipedia
+  url: https://en.wikipedia.org/wiki/Ark_(search_engine)
+- type: CrunchBase
+  url: https://www.crunchbase.com/organization/ark
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ark.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: Company is defunct with no live site and no API surface; identity researched
+    and recorded, no artifacts applicable.
