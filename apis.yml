@@ -51,7 +51,7 @@ x-accelerator: Y Combinator W12
 x-disambiguation: 'Not to be confused with: ARK Investment Management (ark-funds.com
   / ark-invest.com), which now controls the ark.com redirect; the ARK Ecosystem blockchain
   (ark.io / ark.dev); or AI Ark (ai-ark.com), a separate B2B data enrichment API vendor.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
